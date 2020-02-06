@@ -1,4 +1,4 @@
-##命令行/Command Line
+## 命令行/Command Line
 1. 登陆mysql控制台：
 	* ```mysql -u [username] -p``` 
 2. 创建一个数据库：
@@ -10,5 +10,5 @@
 5.  检查是否成功：
 	* ```show tables;```
 
-##MySQL Work Bench
+## MySQL Work Bench
 ~~我没有我不会用我不知道别来找我~~
