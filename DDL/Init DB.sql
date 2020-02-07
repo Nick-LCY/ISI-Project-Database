@@ -1,5 +1,5 @@
 CREATE TABLE product (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	name varchar(256) NOT NULL,
 	category varchar(256) NOT NULL,
 	price decimal(10, 2) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE product (
 	CONSTRAINT product_id_pk PRIMARY KEY(id)
 );
 CREATE TABLE user (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	name varchar(64) NOT NULL,
 	email varchar(64) NOT NULL,
 	pwd varchar(256) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE user (
 	CONSTRAINT user_email_uc UNIQUE (email)
 );
 CREATE TABLE product_photograph (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	file_location varchar(256) NOT NULL,
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE product_photograph (
 	REFERENCES product(id)
 );
 CREATE TABLE product_description (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	content varchar(256) NOT NULL,
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE product_description (
 	FOREIGN KEY(product_id) REFERENCES product(id)
 );
 CREATE TABLE notification (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	content varchar(1024) NOT NULL,
 	is_read boolean NOT NULL DEFAULT false,
 	user_id int(8) NOT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE shopping_cart_item (
 	FOREIGN KEY(product_id) REFERENCES product(id)
 );
 CREATE TABLE purchase_order (
-	id int(8),
+	id int(8) AUTO_INCREMENT,
 	purchase_date date NOT NULL,
 	shipment_date date,
 	cancel_date date,
