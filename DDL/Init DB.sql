@@ -23,6 +23,8 @@ CREATE TABLE product_photograph (
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_photograph_id_pk PRIMARY KEY(id),
+	CONSTRAINT product_photograph_sequence_product_id_unique
+	UNIQUE(sequence, product_id),
 	CONSTRAINT product_photograph_product_id_fk FOREIGN KEY(product_id)
 	REFERENCES product(id)
 );
@@ -32,6 +34,8 @@ CREATE TABLE product_description (
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_description_id_pk PRIMARY KEY(id),
+	CONSTRAINT product_description_sequence_product_id_unique
+	UNIQUE(sequence, product_id),
 	CONSTRAINT product_description_product_id_fk
 	FOREIGN KEY(product_id) REFERENCES product(id)
 );
