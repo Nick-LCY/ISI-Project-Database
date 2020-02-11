@@ -30,7 +30,8 @@ CREATE TABLE product_photograph (
 );
 CREATE TABLE product_description (
 	id int(8) AUTO_INCREMENT,
-	content varchar(256) NOT NULL,
+	attribute_name varchar(256) NOT NULL,
+	attribute_value varchar(256) NOT NULL,
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_description_id_pk PRIMARY KEY(id),
