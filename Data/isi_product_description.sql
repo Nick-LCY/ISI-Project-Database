@@ -1,0 +1,1 @@
+INSERT INTO isi.product_description (id, attribute_name, attribute_value, sequence, product_id) VALUES (1, 'Size', '5.6 inch', 1, 1);

@@ -1,0 +1,2 @@
+INSERT INTO isi.product_photograph (id, file_location, sequence, product_id) VALUES (1, 'HAHA', 1, 1);
+INSERT INTO isi.product_photograph (id, file_location, sequence, product_id) VALUES (2, 'HEHE', 2, 1);

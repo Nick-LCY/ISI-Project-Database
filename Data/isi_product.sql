@@ -1,0 +1,10 @@
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (1, 'Football', '3234', 45.00, 0, 'C:/football.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (2, 'Basketball', '3234', 45.00, 0, 'C:/basketball.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (3, 'iPhone', '4133', 10000.00, 1, 'C:/iPhone.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (4, 'iPad', '4134', 5000.00, 0, 'C:/iPad.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (5, 'T-Shirt', '1191', 200.00, 0, 'C:/t-shirt.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (6, 'Hat', '1193', 60.00, 0, 'C:/hap.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (7, 'PS4', '4322', 4000.00, 1, 'C:/PS4.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (8, 'Xbox360', '4322', 4000.00, 0, 'C:/xbox360.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (9, 'Cookie', '5951', 2.00, 0, 'C:/cookie.jpg');
+INSERT INTO isi.product (id, name, category, price, out_of_stock, thumbnail_location) VALUES (10, 'Chocolate', '5953', 10.00, 0, 'C:/chocolate.jpg');

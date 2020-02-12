@@ -14,6 +14,8 @@ CREATE TABLE user (
 	pwd varchar(256) NOT NULL,
 	shipping_addr varchar(256) NOT NULL,
 	is_vendor boolean NOT NULL DEFAULT false,
+	token varchar(64),
+	create_time varchar(64),
 	CONSTRAINT user_id_pk PRIMARY KEY(id),
 	CONSTRAINT user_email_uc UNIQUE (email)
 );
