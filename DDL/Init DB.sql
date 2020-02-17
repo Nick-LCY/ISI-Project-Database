@@ -64,9 +64,9 @@ CREATE TABLE shopping_cart_item (
 );
 CREATE TABLE purchase_order (
 	id int(8),
-	purchase_date date NOT NULL,
-	shipment_date date,
-	cancel_date date,
+	purchase_date datetime NOT NULL,
+	shipment_date datetime,
+	cancel_date datetime,
 	cancelled_by int(1),
 	status int(1) NOT NULL,
 	user_id int(8) NOT NULL,

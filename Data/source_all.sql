@@ -1,0 +1,9 @@
+source isi_product.sql
+source isi_product_description.sql
+source isi_product_photograph.sql
+source isi_user.sql
+source isi_notification.sql
+source isi_shopping_cart_item.sql
+source isi_purchase_order.sql
+source isi_purchase_detail.sql
+source isi_review.sql
