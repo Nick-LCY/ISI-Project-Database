@@ -1,0 +1,5 @@
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (1, 'nick', 'hello@ipm.edu.mo', '123456', 'School', 0, 'c39849107d984e64a8b865516f017231', '1581760127407');
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (2, 'nick', 'hello@ipm.edu.m', '123456', 'School', 0, null, null);
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (3, 'Great', 'test@test.com', '123456', 'Where?', 0, 'f5a593c2c39d4739abc4df21f9ca7858', '1581668354075');
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (4, 'Great', 'test@test.edu', '123456', 'Where?', 0, '32dc92075a3e4e3fad6482a806201f8f', '1581668392702');
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (5, 'Great', 'test@test.mo', '123456', 'Where?', 0, '1c658f0dfbc94c8fb6efefbb49dac037', '1581668492987');

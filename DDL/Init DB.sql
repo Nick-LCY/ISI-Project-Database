@@ -63,7 +63,7 @@ CREATE TABLE shopping_cart_item (
 	FOREIGN KEY(product_id) REFERENCES product(id)
 );
 CREATE TABLE purchase_order (
-	id int(8) AUTO_INCREMENT,
+	id int(8),
 	purchase_date date NOT NULL,
 	shipment_date date,
 	cancel_date date,
