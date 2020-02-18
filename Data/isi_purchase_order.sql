@@ -1,0 +1,1 @@
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (38644129, 375.00, '2020-02-18 16:26:37', null, null, null, 0, 1);

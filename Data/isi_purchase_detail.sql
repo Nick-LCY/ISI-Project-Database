@@ -1,0 +1,2 @@
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (38644129, 1, 'Football', 45.00, 3);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (38644129, 6, 'Hat', 60.00, 4);
