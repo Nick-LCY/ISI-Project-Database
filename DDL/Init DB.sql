@@ -65,9 +65,9 @@ CREATE TABLE shopping_cart_item (
 CREATE TABLE purchase_order (
 	id int(8),
 	total_amount decimal(10, 2) NOT NULL,
-	purchase_date datetime NOT NULL,
-	shipment_date datetime,
-	cancel_date datetime,
+	purchase_date varchar(64) NOT NULL,
+	shipment_date varchar(64),
+	cancel_date varchar(64),
 	cancelled_by int(1),
 	status int(1) NOT NULL,
 	user_id int(8) NOT NULL,
