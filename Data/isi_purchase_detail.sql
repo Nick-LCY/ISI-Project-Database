@@ -1,2 +1,10 @@
-INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (38644129, 1, 'Football', 45.00, 3);
-INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (38644129, 6, 'Hat', 60.00, 4);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (24330101, 2, 'Basketball', 45.00, 2);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (24330101, 9, 'Cookie', 2.00, 1);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (46424689, 2, 'Basketball', 45.00, 2);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (46424689, 9, 'Cookie', 2.00, 1);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (49061479, 3, 'iPhone', 10000.00, 5);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (49061479, 8, 'Xbox360', 4000.00, 2);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (50143601, 1, 'Football', 45.00, 5);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (50143601, 6, 'Hat', 60.00, 66);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (50287949, 1, 'Football', 45.00, 3);
+INSERT INTO isi.purchase_detail (purchase_order_id, product_id, product_name, product_price, quantity) VALUES (50287949, 6, 'Hat', 60.00, 4);

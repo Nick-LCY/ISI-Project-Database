@@ -90,7 +90,7 @@ CREATE TABLE review (
 	product_id int(8),
 	purchase_order_id int(8),
 	stars int (1) NOT NULL DEFAULT 5,
-	review varchar(1024),
+	content varchar(1024),
 	CONSTRAINT reveiw_product_id_purchase_order_id_pk
 	PRIMARY KEY(purchase_order_id, product_id),
 	CONSTRAINT review_pks_fk FOREIGN KEY(purchase_order_id, product_id)

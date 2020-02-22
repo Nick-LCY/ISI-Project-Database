@@ -1,1 +1,5 @@
-INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (38644129, 375.00, '2020-02-18 16:26:37', null, null, null, 0, 1);
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (24330101, 92.00, '1582209476441', null, null, null, 0, 1);
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (46424689, 92.00, '1582210325560', null, null, null, 0, 1);
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (49061479, 58000.00, '1582203941796', null, '1582204588410', 1, 3, 1);
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (50143601, 4185.00, '1582129165543', '1582209453509', null, null, 2, 1);
+INSERT INTO isi.purchase_order (id, total_amount, purchase_date, shipment_date, cancel_date, cancelled_by, status, user_id) VALUES (50287949, 375.00, '1582128720160', '1582128731941', null, null, 2, 1);
