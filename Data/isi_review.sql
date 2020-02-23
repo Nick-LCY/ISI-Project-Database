@@ -1,0 +1,1 @@
+INSERT INTO isi.review (product_id, purchase_order_id, stars, content) VALUES (2, 24330101, 5, 'Good');
