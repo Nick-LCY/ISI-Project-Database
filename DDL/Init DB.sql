@@ -5,6 +5,8 @@ CREATE TABLE product (
 	price decimal(10, 2) NOT NULL,
 	out_of_stock boolean NOT NULL DEFAULT true,
 	thumbnail_location varchar(256) NOT NULL,
+	total_stars int(8) NOT NULL DEFAULT 0,
+	total_comments int(8) NOT NULL DEFAULT 0,
 	CONSTRAINT product_id_pk PRIMARY KEY(id)
 );
 CREATE TABLE user (
