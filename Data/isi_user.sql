@@ -1,2 +1,2 @@
 INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (1, 'nick', 'hello@ipm.edu.mo', '123456', 'School', 1, 'c39849107d984e64a8b865516f017231', '1581760127407');
-INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (6, 'Boolean', 'sixsixsix@ipm.edu.mo', '123456', 'Integer', 0, 'e19af936fb9242e5b033997236ea0bf0', '1582276858892');
+INSERT INTO isi.user (id, name, email, pwd, shipping_addr, is_vendor, token, create_time) VALUES (6, 'Boolean', 'sixsixsix@ipm.edu.mo', '507f513353702b50c145d5b7d138095c', 'Integer', 0, null, null);
