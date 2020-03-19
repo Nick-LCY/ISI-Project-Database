@@ -1,3 +1,7 @@
+CREATE DATABASE isi CHARACTER SET utf8mb4;
+
+USE isi;
+
 CREATE TABLE product (
 	id int(8) AUTO_INCREMENT,
 	name varchar(256) NOT NULL,
@@ -8,7 +12,7 @@ CREATE TABLE product (
 	total_stars int(8) NOT NULL DEFAULT 0,
 	total_comments int(8) NOT NULL DEFAULT 0,
 	CONSTRAINT product_id_pk PRIMARY KEY(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE user (
 	id int(8) AUTO_INCREMENT,
 	name varchar(64) NOT NULL,
@@ -20,18 +24,16 @@ CREATE TABLE user (
 	create_time varchar(64),
 	CONSTRAINT user_id_pk PRIMARY KEY(id),
 	CONSTRAINT user_email_uc UNIQUE (email)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE product_photograph (
 	id int(8) AUTO_INCREMENT,
 	file_location varchar(256) NOT NULL,
 	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_photograph_id_pk PRIMARY KEY(id),
-	CONSTRAINT product_photograph_sequence_product_id_unique
-	UNIQUE(sequence, product_id),
 	CONSTRAINT product_photograph_product_id_fk FOREIGN KEY(product_id)
 	REFERENCES product(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE product_description (
 	id int(8) AUTO_INCREMENT,
 	attribute_name varchar(256) NOT NULL,
@@ -43,7 +45,7 @@ CREATE TABLE product_description (
 	UNIQUE(sequence, product_id),
 	CONSTRAINT product_description_product_id_fk
 	FOREIGN KEY(product_id) REFERENCES product(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE notification (
 	id int(8) AUTO_INCREMENT,
 	content varchar(1024) NOT NULL,
@@ -52,7 +54,7 @@ CREATE TABLE notification (
 	CONSTRAINT notification_id_pk PRIMARY KEY(id),
 	CONSTRAINT notification_user_id_fk
 	FOREIGN KEY(user_id) REFERENCES user(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE shopping_cart_item (
 	user_id int(8),
 	product_id int(8),
@@ -63,7 +65,7 @@ CREATE TABLE shopping_cart_item (
 	FOREIGN KEY(user_id) REFERENCES user(id),
 	CONSTRAINT shopping_cart_item_product_id_fk
 	FOREIGN KEY(product_id) REFERENCES product(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE purchase_order (
 	id int(8),
 	total_amount decimal(10, 2) NOT NULL,
@@ -76,7 +78,7 @@ CREATE TABLE purchase_order (
 	CONSTRAINT purchse_order_id_pk PRIMARY KEY(id),
 	CONSTRAINT purchase_order_user_id_fk
 	FOREIGN KEY(user_id) REFERENCES user(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE purchase_detail (
 	purchase_order_id int(8),
 	product_id int(8),
@@ -87,7 +89,7 @@ CREATE TABLE purchase_detail (
 	PRIMARY KEY(purchase_order_id, product_id),
 	CONSTRAINT purchase_detail_purchase_order_id_fk
 	FOREIGN KEY(purchase_order_id) REFERENCES purchase_order(id)
-);
+) DEFAULT CHARSET=utf8mb4;
 CREATE TABLE review (
 	product_id int(8),
 	purchase_order_id int(8),
@@ -98,4 +100,4 @@ CREATE TABLE review (
 	PRIMARY KEY(purchase_order_id, product_id),
 	CONSTRAINT review_pks_fk FOREIGN KEY(purchase_order_id, product_id)
 	REFERENCES purchase_detail(purchase_order_id, product_id)
-);
+) DEFAULT CHARSET=utf8mb4;
