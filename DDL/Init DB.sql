@@ -28,7 +28,6 @@ CREATE TABLE user (
 CREATE TABLE product_photograph (
 	id int(8) AUTO_INCREMENT,
 	file_location varchar(256) NOT NULL,
-	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_photograph_id_pk PRIMARY KEY(id),
 	CONSTRAINT product_photograph_product_id_fk FOREIGN KEY(product_id)
@@ -38,11 +37,8 @@ CREATE TABLE product_description (
 	id int(8) AUTO_INCREMENT,
 	attribute_name varchar(256) NOT NULL,
 	attribute_value varchar(256) NOT NULL,
-	sequence int(4) NOT NULL,
 	product_id int(8) NOT NULL,
 	CONSTRAINT product_description_id_pk PRIMARY KEY(id),
-	CONSTRAINT product_description_sequence_product_id_unique
-	UNIQUE(sequence, product_id),
 	CONSTRAINT product_description_product_id_fk
 	FOREIGN KEY(product_id) REFERENCES product(id)
 ) DEFAULT CHARSET=utf8mb4;
